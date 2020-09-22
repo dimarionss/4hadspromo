@@ -1,0 +1,109 @@
+$offer1: #ffafbc;
+$offer2: #ff808e;
+$offer3: #7a327e;
+$sd_offer1: #c93e4d;
+$sd_offer3: #37023a;
+
+.offborder {
+  width: 328px;
+  height: 317px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+  h2 {
+    font-weight: normal;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    margin: 30px 0;
+
+    &.old_price {
+      text-decoration: line-through #000;
+      margin: 30px 0 0 0;
+    }
+  }
+
+  h1 {
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+.text__offer {
+  padding: 20px 40px;
+  color: #000
+}
+
+.offer__one {
+  background: $offer1;
+  border-radius: 70px;
+}
+
+.offer__two {
+  background: $offer2;
+  border-radius: 70px;
+}
+
+.offer__three {
+  background: $offer3;
+  border-radius: 70px;
+}
+
+.offer__around {
+  width: 293px;
+  height: 108px;
+  background: #ffffff;
+  border-radius: 70px;
+
+  p {
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+}
+
+.sd__offer1,
+.sd__offer2 {
+  box-shadow: 0px 0px 12px $sd_offer1;
+}
+
+.sd__offer3 {
+  box-shadow: 0px 0px 12px $sd_offer3;
+}
+
+.finger__background {
+  width: 164px;
+  height: auto;
+  position: absolute;
+  top: 50px;
+  left: 180px;
+}
+
+.finger__1,
+.finger__2,
+.finger__3 {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  position: absolute;
+  top: 83px;
+  left: 204px;
+}
+
+.finger__1 {
+  background-color: $offer1;
+}
+
+.finger__2 {
+  background-color: $offer2;
+}
+
+.finger__3 {
+  background-color: $offer3;
+}

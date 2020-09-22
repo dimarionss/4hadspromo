@@ -1,0 +1,823 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    /*height: 100vh;*/
+    /*height: calc(var(--vh, 1vh) * 100);*/
+    margin-bottom: 25px;
+
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/*--------------------*/
+.offborder {
+    width: 328px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.offborder h2 {
+    font-weight: normal;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    margin: 12.3px 0;
+}
+
+.offborder h2.old_price {
+    text-decoration-line: line-through;
+    -webkit-text-decoration-line: line-through;
+    text-decoration-color: #000;
+    -webkit-text-decoration-color: red;
+    margin: 30px 0 0 0;
+}
+
+.offborder h1 {
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.text__offer {
+    padding: 20px 40px;
+    color: #000;
+}
+
+.offer__one {
+    background: #ffafbc;
+    border-radius: 70px;
+}
+
+.offer__two {
+    background: #ff808e;
+    border-radius: 70px;
+}
+
+.offer__three {
+    background: #7a327e;
+    border-radius: 70px;
+}
+
+.offer__around {
+    width: 293px;
+    height: 108px;
+    background: #ffffff;
+    border-radius: 70px;
+}
+
+.offer__around p {
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.sd__offer1,
+.sd__offer2 {
+    box-shadow: 0px 0px 12px #c93e4d;
+}
+
+.sd__offer3 {
+    box-shadow: 0px 0px 12px #37023a;
+}
+
+.finger__background {
+    width: 164px;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    left: 180px;
+}
+
+.finger__background img {
+    display: block;
+    width: 100%;
+}
+
+.finger__1,
+.finger__2,
+.finger__3 {
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    position: absolute;
+    top: 83px;
+    left: 204px;
+}
+
+.finger__1 {
+    background-color: #ffafbc;
+}
+
+.finger__2 {
+    background-color: #ff808e;
+}
+
+.finger__3 {
+    background-color: #7a327e;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.container {
+    max-width: 100%;
+    height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    margin: 5px auto;
+}
+
+.logo {
+    text-align: center;
+    margin: 15px 0 35px 0;
+}
+
+.label__text {
+    text-align: center;
+}
+
+.label__text h4 {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+.label__text h3 {
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.timer {
+    text-align: center;
+}
+
+.countdown {
+    display: inline-block;
+    text-align: center;
+}
+
+.countdown-number {
+    display: inline-block;
+}
+
+.countdown-time {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 50px;
+    color: #000;
+    display: inline-block;
+}
+
+.countdown-text {
+    display: block;
+    font-weight: 200;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.button {
+    text-align: center;
+}
+
+.button input {
+    padding: 20px 80px;
+    background-color: #ff808e;
+    border-radius: 50px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 25px;
+    transition: all ease 0.3s;
+    font-weight: 300;
+}
+
+.button input:hover {
+    box-shadow: 0px 0px 12px #c93e4d;
+    transition: all ease 0.3s;
+}
+
+.form_radio_btn input[type=radio] {
+    display: none;
+}
+
+.form_radio_btn input[type=radio]:checked + label {
+    opacity: 0.7;
+    cursor: text;
+}
+
+.form_radio_btn label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 20px;
+    border-radius: 6px;
+    user-select: none;
+}
+
+/* Checked */
+/* Hover */
+.form_radio_btn label:hover {
+    opacity: 0.7;
+}
+
+/* Disabled */
+.arround__ok {
+    width: 81px;
+    height: 81px;
+    background: #ff808e;
+    box-shadow: 0px 0px 25px;
+    border-radius: 50%;
+}
+
+.arround__galka {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.arround__galka img {
+    position: absolute;
+}
+
+.zayavka__text {
+    text-align: center;
+}
+
+.zayavka__text h3 {
+    margin-bottom: 40px;
+    color: #000;
+    font-weight: 300;
+}
+
+.zayavka__text p {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.zayavka__text span {
+    font-weight: 200;
+    font-size: 20px;
+    color: #000000;
+    margin-right: 10px;
+}
+
+.zayavka__text h5 {
+    font-weight: bold;
+    font-size: 25px;
+    color: #000000;
+}
+
+.zayavka__text .middle__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.form__section {
+    max-width: 100%;
+    margin: 5px auto;
+}
+
+.form__section p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    border: 1px solid #ff808e;
+    border-radius: 10px;
+    padding: 15px;
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+.input::placeholder {
+    font-weight: 200;
+    font-size: 17px;
+    color: #000000;
+}
+
+.block__buttompay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block__buttompay .buttom__pay {
+    border: 1px solid #ff808e;
+    border-radius: 10px;
+    padding: 15px 18px;
+    margin-bottom: 15px;
+    font-weight: 200;
+    font-size: 15px;
+    width: 164px;
+    text-align: center;
+}
+
+.block__buttompay .buttom__pay:active {
+    background-color: #ff808e;
+}
+
+.block__buttompay .buttom__pay:first-child {
+    margin-right: 6px;
+}
+
+.block__buttompay .buttom__pay:hover {
+    background-color: #ff808e;
+}
+
+.block__buttompay .buttom__pay a {
+    color: #000000;
+    cursor: pointer;
+}
+
+.block__buttompay .buttom__pay a:hover {
+    color: #fff;
+}
+
+.block__buttompay .buttom__pay a:active {
+    background-color: #ff808e;
+}
+
+.block__buttompay2 {
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0.3s;
+    flex-wrap: wrap;
+    align-content: space-around;
+    list-style: none;
+    gap: 0.7vw;
+    grid-template-columns: 165px 165px;
+}
+
+.block__buttompay2 .buttom__pay {
+    border: 1px solid #ff808e;
+    border-radius: 10px;
+    padding: 15px 18px;
+    font-weight: 200;
+    font-size: 15px;
+    width: 100%;
+}
+
+.block__buttompay2 .buttom__pay:active {
+    background-color: #ff808e;
+}
+
+.block__buttompay2 .buttom__pay:nth-child(2n+1) {
+    margin-right: 6px;
+}
+
+.block__buttompay2 .buttom__pay:hover {
+    background-color: #ff808e;
+}
+
+.block__buttompay2 .buttom__pay a {
+    color: #000000;
+    cursor: pointer;
+}
+
+.block__buttompay2 .buttom__pay a:hover {
+    color: #fff;
+}
+
+.block__buttompay2 .buttom__pay a:active {
+    background-color: #ff808e;
+}
+
+.buttom__select {
+    text-align: center;
+}
+
+.buttom__select a {
+    font-weight: 200;
+    font-size: 15px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.wrapper-dropdown-3 {
+    /* Размер и позиционирование */
+    width: 200px;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.wrapper-dropdown-3 .dropdown {
+    /* Размер и позиционирование */
+    position: absolute;
+    top: 140%;
+    left: 0;
+    right: 0;
+    /* Стили */
+    border-radius: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-weight: normal;
+    transition: all 0.5s ease-in;
+    list-style: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.wrapper-dropdown-3 .dropdown li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #8aa8bd;
+    border-bottom: 1px solid #e6e8ea;
+    box-shadow: inset 0 1px 0 white;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper-dropdown-3 .dropdown li i {
+    float: right;
+    color: inherit;
+}
+
+.wrapper-dropdown-3 .dropdown li:first-of-type a {
+    border-radius: 7px 7px 0 0;
+}
+
+.wrapper-dropdown-3 .dropdown li:last-of-type a {
+    border-radius: 0 0 7px 7px;
+    border: none;
+}
+
+/* При наведении курсора */
+.wrapper-dropdown-3 .dropdown li:hover a {
+    background: #f3f8f8;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo a {
+    position: absolute;
+    left: 45px;
+    top: -5px;
+    font-size: 50px;
+    color: #000;
+}
+
+.contact__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 5px 0;
+}
+
+.contact__block1 {
+    margin-right: 20px;
+}
+
+.title__contact {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.text__contact1, .text__contact2 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+/*================================================modal=================================================*/
+/* стилизация содержимого страницы */
+/* свойства модального окна по умолчанию */
+.text__contact1 a, .text__contact2 a {
+    color: #000;
+}
+
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* цвет фона */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in;
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+
+/* при отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+    pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 30px auto; /* для отображения модального окна по центру */
+    }
+}
+
+/* свойства для блока, содержащего контент модального окна */
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    }
+}
+
+/* свойства для заголовка модального окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+
+.modal-body p {
+    font-size: 15px;
+    text-align: justify;
+
+}
+
+.active_b {
+    background-color: #ff808e;
+    color: #fff;
+}
+
+/*================================================modal=================================================*/
+
+@media (max-width: 320px) {
+    .logo {
+        position: relative;
+    }
+
+    .logo a {
+        position: absolute;
+        left: 0px;
+        top: -9px;
+        font-size: 50px;
+        color: #000;
+    }
+
+    .block__buttompay2 .buttom__pay {
+        padding: 10px 9px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .block__buttompay .buttom__pay {
+        padding: 10px 9px;
+        width: 150px;
+    }
+
+    .block__buttompay2 .buttom__pay:nth-child(2n+1) {
+        margin-right: 6px;
+    }
+
+    .block__buttompay2 {
+        grid-gap: 2vw;
+        grid-template-columns: 140px 140px;
+    }
+}
+
+@media (max-width: 321px) {
+    .text__offer {
+        padding: 15px 23px;
+    }
+
+    .offborder {
+        width: 100%;
+        height: auto;
+    }
+
+    .offer__around {
+        width: 254px;
+    }
+
+    .finger__1, .finger__2, .finger__3 {
+        position: absolute;
+        top: 83px;
+        left: 165px;
+    }
+
+    .finger__background {
+        position: absolute;
+        top: 50px;
+        left: 140px;
+    }
+
+}
+
+@media (max-width: 413px) {
+    .countdown-time {
+        font-size: 40px;
+        padding: 10px;
+    }
+
+    .countdown-text {
+        margin-bottom: 12px;
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+    .countdown-time {
+        font-size: 35px;
+    }
+
+    .logo {
+        position: relative;
+        margin: 15px 0 20px 0;
+    }
+
+    .logo a {
+        position: absolute;
+        left: 0px;
+        top: -9px;
+        font-size: 50px;
+        color: #000;
+    }
+}
+.owl-dots{
+    color: black;
+}
+.owl-nav{
+    text-align: center;
+    font-size: 60px;
+}
+.owl-prev{
+    margin-right: 70px;
+}

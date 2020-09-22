@@ -1,0 +1,21 @@
+.arround__ok {
+  width: 81px;
+  height: 81px;
+  background: $offer2;
+  box-shadow: 0px 0px 25px;
+  border-radius: 50%;
+
+
+}
+
+.arround__galka {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+
+  img {
+    position: absolute;
+  }
+}
